@@ -1,3 +1,18 @@
+"""Python API tutorial using Flask and SQLite3
+
+Source: https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask
+
+Supported endpoint examples (GET only):
+    * Retrieve all the books or filtered by author, id and/or published
+    * All books example:
+    http://127.0.0.1:5000/api/v1/resources/books/all
+    * Filtered by author example:
+    http://127.0.0.1:5000/api/v1/resources/books?author=Connie+Willis
+    * Filtered by published and author example:
+    http://127.0.0.1:5000/api/v1/resources/books?author=Connie+Willis&published=1993
+
+"""
+
 import flask
 import sqlite3
 
