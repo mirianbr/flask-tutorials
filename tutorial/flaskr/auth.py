@@ -35,7 +35,8 @@ def register():
                 error = f"User {username} is already registered."
             else:
                 return redirect(url_for("auth.login"))
-            flash(error)
+        
+        flash(error)
 
     return render_template('auth/register.html')
 
